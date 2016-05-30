@@ -61,6 +61,9 @@ Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
 - [Countries-Api](#start)
   - [Methods](#methods)
     - [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+    - [`findByCCN3(ccn3)`](#user-content-findbyccn3ccn3)
+    - [`findByCCA3(cca3)`](#user-content-findbycca3cca3)
+    - [`findByCIOC(cioc)`](#user-content-findbycioccioc)
 
 ## Start
 ```js
@@ -97,7 +100,35 @@ Returns a 200 Success where:
 - `data` - optional payload.
 
 ```js
-Countries.findByCountryCode(533);
+Countries.findByCCN3(533);
+```
+
+Generates the same response as: [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByCCA3(cca3)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByCCA3('ABW');
+```
+
+Generates the same response as: [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByCIOC(cioc)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByCIOC('ARU');
 ```
 
 Generates the same response as: [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
