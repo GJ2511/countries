@@ -80,6 +80,7 @@ Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
     - [`findByName(name)`](#user-content-findbynamename)
     - [`findByOfficialName(officialName)`](#user-content-findbyofficialnameofficialname)
     - [`findByLanguage(name)`](#user-content-findbylanguagename)
+    - [`findAll()`](#user-content-findall)
 
 ## Start
 ```js
@@ -374,3 +375,17 @@ Countries.findByLanguage('Dutch');
 ```
 
 Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findAll()`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findAll();
+```
+
+Generates the same response as (Whole Country data): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
