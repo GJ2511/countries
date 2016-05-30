@@ -2,7 +2,7 @@ Countries-Api
 
 Module which expose some usefull Api's that can be very handy when dealing with countries
 
-Country JSON will be like
+Country JSON object will be like
 
 ```json
 {
