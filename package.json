@@ -26,6 +26,8 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "apidoc": "^0.16.1"
+    "apidoc": "^0.16.1",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.5.3"
   }
 }
