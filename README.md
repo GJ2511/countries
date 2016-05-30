@@ -64,6 +64,9 @@ Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
     - [`findByCCN3(ccn3)`](#user-content-findbyccn3ccn3)
     - [`findByCCA3(cca3)`](#user-content-findbycca3cca3)
     - [`findByCIOC(cioc)`](#user-content-findbycioccioc)
+    - [`findByCapital(capital)`](#user-content-findbycapitalcapital)
+    - [`findBySubRegion(subRegion)`](#user-content-findbysubRegionsubRegion)
+    - [`findByRegion(region)`](#user-content-findbyregionregion)
 
 ## Start
 ```js
@@ -132,3 +135,45 @@ Countries.findByCIOC('ARU');
 ```
 
 Generates the same response as: [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByCapital(capital)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByCapital('Oranjestad');
+```
+
+Generates the same response as: [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findBySubRegion(subRegion)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findBySubRegion('Caribbean');
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByRegion(region)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByRegion('Americas');
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
