@@ -19,5 +19,8 @@
     "node": ">=5.10.0"
   },
   "author": "@GJ (Gaurav Joshi)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
 }
