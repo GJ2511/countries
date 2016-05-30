@@ -67,17 +67,19 @@ Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
     - [`findByCapital(capital)`](#user-content-findbycapitalcapital)
     - [`findBySubRegion(subRegion)`](#user-content-findbysubregionsubregion)
     - [`findByRegion(region)`](#user-content-findbyregionregion)
-    - [`findByResidentName(name)`](#user-content-findbyresidentnameresidentname)
-    - [`findByLandLock(boolean)`](#user-content-findbylandlocklandlock)
+    - [`findByResidentName(name)`](#user-content-findbyresidentnamename)
+    - [`findByLandLock(boolean)`](#user-content-findbylandlockboolean)
     - [`findByArea(area)`](#user-content-findbyareaarea)
     - [`findByCurrency(currency)`](#user-content-findbycurrencycurrency)
-    - [`findByCallingCode(code)`](#user-content-findbycallingcodecallingcode)
-    - [`findBySpellings(spells)`](#user-content-findbyspellingsspellings)
+    - [`findByCallingCode(code)`](#user-content-findbycallingcodecode)
+    - [`findBySpellings(spells)`](#user-content-findbyspellingsspells)
     - [`findByBorders(borders)`](#user-content-findbybordersborders)
-    - [`findByLat(latitude)`](#user-content-findbylatlat)
-    - [`findByLong(longitude)`](#user-content-findbylonglong)
-    - [`findByLatLong(array of lat and long)`](#user-content-findbylatlonglatlong)
-
+    - [`findByLat(latitude)`](#user-content-findbylatlatitude)
+    - [`findByLong(longitude)`](#user-content-findbylonglongitude)
+    - [`findByLatLong(array of lat and long)`](#user-content-findbylatlongarray)
+    - [`findByName(name)`](#user-content-findbynamename)
+    - [`findByOfficialName(officialName)`](#user-content-findbyofficialnameofficialname)
+    - [`findByLanguage(name)`](#user-content-findbylanguagename)
 
 ## Start
 ```js
@@ -327,6 +329,48 @@ Returns a 200 Success where:
 
 ```js
 Countries.findByLatLong([12.5, -69.96666666]);
+```
+
+Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByName(name)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByName('Aruba');
+```
+
+Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByOfficialName(officialName)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByOfficialName('Aruba');
+```
+
+Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByLanguage(name)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByLanguage('Dutch');
 ```
 
 Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
