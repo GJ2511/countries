@@ -65,8 +65,19 @@ Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
     - [`findByCCA3(cca3)`](#user-content-findbycca3cca3)
     - [`findByCIOC(cioc)`](#user-content-findbycioccioc)
     - [`findByCapital(capital)`](#user-content-findbycapitalcapital)
-    - [`findBySubRegion(subRegion)`](#user-content-findbysubRegionsubRegion)
+    - [`findBySubRegion(subRegion)`](#user-content-findbysubregionsubregion)
     - [`findByRegion(region)`](#user-content-findbyregionregion)
+    - [`findByResidentName(name)`](#user-content-findbyresidentnameresidentname)
+    - [`findByLandLock(boolean)`](#user-content-findbylandlocklandlock)
+    - [`findByArea(area)`](#user-content-findbyareaarea)
+    - [`findByCurrency(currency)`](#user-content-findbycurrencycurrency)
+    - [`findByCallingCode(code)`](#user-content-findbycallingcodecallingcode)
+    - [`findBySpellings(spells)`](#user-content-findbyspellingsspellings)
+    - [`findByBorders(borders)`](#user-content-findbybordersborders)
+    - [`findByLat(latitude)`](#user-content-findbylatlat)
+    - [`findByLong(longitude)`](#user-content-findbylonglong)
+    - [`findByLatLong(array of lat and long)`](#user-content-findbylatlonglatlong)
+
 
 ## Start
 ```js
@@ -177,3 +188,145 @@ Countries.findByRegion('Americas');
 ```
 
 Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByResidentName(name)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByResidentName('Aruban');
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByLandLock(boolean)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByLandLock(false);
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByArea(area)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByArea(180);
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByCurrency(currency)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByCurrency("AWG");
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByCallingCode(code)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByCallingCode("297");
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findBySpellings(spells)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findBySpellings("ZW", "Republic of Zimbabwe");
+Countries.findBySpellings("ZW");
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByBorders(borders)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByBorders("AGO", "BWA",);
+Countries.findByBorders("AGO");
+```
+
+Generates the same response as (May have multiple entries): [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByLat(latitude)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByLat(12);
+```
+
+Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByLong(longitude)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByLong(-69.96666666);
+```
+
+Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
+
+### `findByLatLong(array)`
+
+Returns a 200 Success where:
+- `statusCode` - 200
+- `error` - false
+- `message` - optional message.
+- `data` - optional payload.
+
+```js
+Countries.findByLatLong([12.5, -69.96666666]);
+```
+
+Generates the same response as : [`findByCountryCode(countryCode)`](#user-content-findbycountrycodecountrycode)
