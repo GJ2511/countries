@@ -6,11 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GJ2511/countries.git"
+  },
   "keywords": [
     "node",
     "countries",
     "json"
   ],
-  "author": "gaurav joshi",
+  "engines": {
+    "node": ">=5.10.0"
+  },
+  "author": "@GJ (Gaurav Joshi)",
   "license": "ISC"
 }
