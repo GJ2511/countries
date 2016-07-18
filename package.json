@@ -1,5 +1,5 @@
 {
-  "name": "countries",
+  "name": "countries-api",
   "version": "1.0.0",
   "description": "module to get world countries with ease",
   "main": "index.js",
@@ -29,5 +29,13 @@
     "apidoc": "^0.16.1",
     "expect.js": "^0.3.1",
     "mocha": "^2.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/GJ2511/countries/issues"
+  },
+  "homepage": "https://github.com/GJ2511/countries#readme",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
   }
 }
