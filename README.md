@@ -81,7 +81,7 @@ Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
     - [`findByOfficialName(officialName)`](#user-content-findbyofficialnameofficialname)
     - [`findByLanguage(name)`](#user-content-findbylanguagename)
     - [`findAll()`](#user-content-findall)
-    - [`findById()`](#user-content-findbyid)
+    - [`findById()`](#user-content-findbyidid)
 
 ## Start
 ```js
